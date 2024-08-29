@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://moolmin-portfolio.vercel.app
+
+# Sitemaps
+Sitemap: https://moolmin-portfolio.vercel.app/sitemap.xml
