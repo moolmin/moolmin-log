@@ -2,8 +2,8 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "moolmin",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "프론트엔드 개발자",
+    image: "/avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: "Sumin Kim",
     bio: "프론트엔드 개발자 입니다.",
     email: "zzmzzm0065@gmail.com",
     linkedin: "sumin-silvia-k",
@@ -12,8 +12,8 @@ const CONFIG = {
   },
   projects: [
     {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
+      name: `portfolio`,
+      href: "/portfolio",
     },
   ],
   // blog setting (required)

@@ -9,14 +9,18 @@ export const Global = () => {
   return (
     <_Global
       styles={css`
+     @font-face {
+    font-family: 'Cafe24Ssukssuk';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Ssukssuk.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
         body {
           margin: 0;
           padding: 0;
           color: ${theme.colors.gray12};
           background-color: ${theme.colors.gray2};
-          font-family: ${pretendard.style.fontFamily};
-          font-weight: ${pretendard.style.fontWeight};
-          font-style: ${pretendard.style.fontStyle};
+         font-family: 'Cafe24Ssukssuk';
         }
 
         * {
@@ -72,6 +76,10 @@ export const Global = () => {
           border: none;
           margin: 0;
           border-top: 1px solid ${theme.colors.gray6};
+        }
+
+        .notion-inline-code {
+          color: black;
         }
       `}
     />

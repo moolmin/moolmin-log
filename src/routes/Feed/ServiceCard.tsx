@@ -8,8 +8,8 @@ const ServiceCard: React.FC = () => {
   if (!CONFIG.projects) return null
   return (
     <>
-      <StyledTitle>
-        <Emoji>🌟</Emoji> Service
+      {/* <StyledTitle>
+        <Emoji>🌟</Emoji> Portfolio
       </StyledTitle>
       <StyledWrapper>
         {CONFIG.projects.map((project, idx) => (
@@ -23,7 +23,7 @@ const ServiceCard: React.FC = () => {
             <div className="name">{project.name}</div>
           </a>
         ))}
-      </StyledWrapper>
+      </StyledWrapper> */}
     </>
   )
 }

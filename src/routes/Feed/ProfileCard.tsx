@@ -3,6 +3,7 @@ import Image from "next/image"
 import React from "react"
 import { CONFIG } from "site.config"
 import { Emoji } from "src/components/Emoji"
+import { Flex, Tag } from 'antd';
 
 type Props = {}
 
@@ -19,7 +20,14 @@ const ProfileCard: React.FC<Props> = () => {
         <div className="mid">
           <div className=" name">{CONFIG.profile.name}</div>
           <div className="role">{CONFIG.profile.role}</div>
-          <div className="text-sm mb-2">{CONFIG.profile.bio}</div>
+          <div className="text-sm mb-2">
+            <Flex gap="6px" align="center" justify="center">
+              <Tag color="gold">frontend</Tag>
+              <Tag color="gold">React.js</Tag>
+               {/* {CONFIG.profile.bio} */}
+            </Flex >
+           
+          </div>
         </div>
       </div>
     </StyledWrapper>
@@ -38,7 +46,7 @@ const StyledWrapper = styled.div`
     border-radius: 1rem;
     width: 100%;
     background-color: ${({ theme }) =>
-      theme.scheme === "light" ? "white" : theme.colors.gray4};
+    theme.scheme === "light" ? "white" : theme.colors.gray4};
     @media (min-width: 768px) {
       padding: 1rem;
     }
@@ -62,7 +70,7 @@ const StyledWrapper = styled.div`
       .name {
         font-size: 1.25rem;
         line-height: 1.75rem;
-        font-style: italic;
+        // font-style: italic;
         font-weight: 700;
       }
       .role {
