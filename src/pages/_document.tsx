@@ -25,6 +25,7 @@ class MyDocument extends Document {
                 name="google-site-verification"
                 content={CONFIG.googleSearchConsole.config.siteVerification}
               />
+              <meta name="google-site-verification" content="mH9jBCopmCRxCYk8MakLBP8nZ8W6Pxp_jwG7LxCAxIQ" />
             </>
           )}
           {/* naver search advisor */}
