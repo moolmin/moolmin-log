@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://moolmin-portfolio.vercel.app
+Host: https://www.moolmin.site/
 
 # Sitemaps
-Sitemap: https://moolmin-portfolio.vercel.app/sitemap.xml
+Sitemap: https://www.moolmin.site//sitemap.xml
