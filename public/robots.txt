@@ -1,6 +1,2 @@
-# *
 User-agent: *
 Allow: /
-
-# Sitemaps
-Sitemap: https://www.moolmin.site//sitemap.xml
