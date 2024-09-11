@@ -22,9 +22,10 @@ const ProfileCard: React.FC<Props> = () => {
           <div className="role">{CONFIG.profile.role}</div>
           <div className="text-sm mb-2">
             <Flex gap="6px" align="center" justify="center">
+              {/* <p>큰 사람이 되고싶어요.<br></br> 몸 말고 마음이.</p> */}
               <Tag color="gold">frontend</Tag>
-              <Tag color="gold">React.js</Tag>
-               {/* {CONFIG.profile.bio} */}
+              <Tag color="gold">React.js</Tag> 
+               {/* {/* {CONFIG.profile.bio} */}
             </Flex >
            
           </div>

@@ -18,6 +18,7 @@ const MetaConfig: React.FC<MetaConfigProps> = (props) => {
       <meta charSet="UTF-8" />
       <meta name="description" content={props.description} />
       <meta name="google-site-verification" content="mH9jBCopmCRxCYk8MakLBP8nZ8W6Pxp_jwG7LxCAxIQ" />
+      <meta name="naver-site-verification" content="fe0083425951429bd6d840f64d6be03e00b8fb54" />
       {/* og */}
       <meta property="og:type" content={props.type} />
       <meta property="og:title" content={props.title} />
