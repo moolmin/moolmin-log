@@ -27,7 +27,7 @@ const CONFIG = {
   link: "https://moolmin-portfolio.vercel.app",
   since: 2024, // If leave this empty, current year will be used.
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
-  ogImageGenerateURL: "https://og-image-korean.vercel.app/moolmin%20log.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fmorethan-log.vercel.app%2Favatar.svg", // The link to generate OG image, don't end with a slash
+  ogImageGenerateURL: "/avatar.png", // The link to generate OG image, don't end with a slash
 
   // notion configuration (required)
   notionConfig: {
@@ -54,9 +54,9 @@ const CONFIG = {
     },
   },
   utterances: {
-    enable: false,
+    enable: true,
     config: {
-      repo: "moolmin/moolmin-portfolio",
+      repo: "moolmin/moolmin-log",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },
