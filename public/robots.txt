@@ -2,8 +2,5 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://www.moolmin.site/
-
 # Sitemaps
 Sitemap: https://www.moolmin.site//sitemap.xml

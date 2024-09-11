@@ -6,7 +6,7 @@ const CONFIG = {
     role: "Sumin Kim",
     bio: "",
     email: "zzmzzm0065@gmail.com",
-    linkedin: "sumin-silvia-k",
+    // linkedin: "sumin-silvia-k",
     github: "moolmin",
     instagram: "insootagramin",
   },
@@ -54,7 +54,7 @@ const CONFIG = {
     },
   },
   utterances: {
-    enable: false,
+    enable: true,
     config: {
       repo: "moolmin/moolmin-log",
       "issue-term": "og:title",
