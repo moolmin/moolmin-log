@@ -73,7 +73,7 @@ export const Global = () => {
 
         hr {
           width: 100%;
-          border: none;
+          border: 1px solid black;
           margin: 0;
           border-top: 1px solid ${theme.colors.gray6};
         }

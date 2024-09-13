@@ -12,8 +12,8 @@ const CONFIG = {
   },
   projects: [
     {
-      name: `portfolio`,
-      href: "/portfolio",
+      name: `resume`,
+      href: "/resume",
     },
   ],
   // blog setting (required)
