@@ -91,4 +91,8 @@ const StyledWrapper = styled.div`
     padding-left: 30px;
     padding-top: 0px;
   }
+    img.notion-page-icon,
+svg.notion-page-icon {
+  // display: none;
+}
 `
