@@ -91,8 +91,16 @@ const StyledWrapper = styled.div`
     padding-left: 30px;
     padding-top: 0px;
   }
-    img.notion-page-icon,
-svg.notion-page-icon {
-  // display: none;
-}
+  .notion-page-icon-inline {
+    display: none;
+  }
+  .notion-page-title .notion-page-icon-inline {
+    display: none;
+  }
+  .notion-h3 {
+    margin-top: 5px;
+  }
+  .notion-h2 {
+    margin-top: 2.5px;
+  }
 `
