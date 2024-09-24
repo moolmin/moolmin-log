@@ -44,9 +44,9 @@ const PostCard: React.FC<Props> = ({ data }) => {
               )}
             </div>
           </div>
-          <div className="summary">
+          {/* <div className="summary">
             <p>{data.summary}</p>
-          </div>
+          </div> */}
           <div className="tags">
             {data.tags &&
               data.tags.map((tag: string, idx: number) => (

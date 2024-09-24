@@ -11,6 +11,7 @@ type Props = {
 }
 
 const PostHeader: React.FC<Props> = ({ data }) => {
+
   return (
     <StyledWrapper>
       <h1 className="title">{data.title}</h1>
