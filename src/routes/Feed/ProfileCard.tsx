@@ -3,7 +3,7 @@ import Image from "next/image"
 import React from "react"
 import { CONFIG } from "site.config"
 import { Emoji } from "src/components/Emoji"
-import { Flex, Tag } from 'antd';
+import { Flex, Tag } from "antd"
 
 type Props = {}
 
@@ -11,7 +11,13 @@ const ProfileCard: React.FC<Props> = () => {
   return (
     <StyledWrapper>
       <div className="title">
-        <Emoji>💻</Emoji> Profile
+        <img
+          width="20"
+          height="20"
+          src="https://img.icons8.com/stickers/100/person-female.png"
+          alt="person-female"
+        />{" "}
+        Profile
       </div>
       <div className="content">
         <div className="top">
@@ -24,10 +30,9 @@ const ProfileCard: React.FC<Props> = () => {
             <Flex gap="6px" align="center" justify="center">
               {/* <p>큰 사람이 되고싶어요.<br></br> 몸 말고 마음이.</p> */}
               <Tag color="gold">frontend</Tag>
-              <Tag color="gold">React.js</Tag> 
-               {/* {/* {CONFIG.profile.bio} */}
-            </Flex >
-           
+              <Tag color="gold">React.js</Tag>
+              {/* {/* {CONFIG.profile.bio} */}
+            </Flex>
           </div>
         </div>
       </div>
@@ -41,13 +46,20 @@ const StyledWrapper = styled.div`
   > .title {
     padding: 0.25rem;
     margin-bottom: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      margin-right: 5px;
+    }
   }
   > .content {
     margin-bottom: 2.25rem;
     border-radius: 1rem;
     width: 100%;
     background-color: ${({ theme }) =>
-    theme.scheme === "light" ? "white" : theme.colors.gray4};
+      theme.scheme === "light" ? "white" : theme.colors.gray4};
     @media (min-width: 768px) {
       padding: 1rem;
     }

@@ -8,7 +8,13 @@ const SearchInput: React.FC<Props> = ({ ...props }) => {
   return (
     <StyledWrapper>
       <div className="top">
-        <Emoji>🔎</Emoji> Search
+        <img
+          width="20"
+          height="20"
+          src="https://img.icons8.com/stickers/100/search.png"
+          alt="search"
+        />
+        Search
       </div>
       <input
         className="mid"
@@ -29,8 +35,13 @@ const StyledWrapper = styled.div`
     margin-bottom: 2rem;
   }
   > .top {
+    display: flex;
     padding: 0.25rem;
     margin-bottom: 0.75rem;
+
+    img {
+      margin-right: 5px;
+    }
   }
   > .mid {
     padding-top: 0.5rem;

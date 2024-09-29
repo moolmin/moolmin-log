@@ -1,7 +1,5 @@
 import { Global as _Global, css, useTheme } from "@emotion/react"
-
 import { ThemeProvider as _ThemeProvider } from "@emotion/react"
-import { pretendard } from "src/assets"
 
 export const Global = () => {
   const theme = useTheme()
@@ -9,18 +7,19 @@ export const Global = () => {
   return (
     <_Global
       styles={css`
-     @font-face {
-    font-family: 'Cafe24Ssukssuk';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Ssukssuk.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+        @font-face {
+          font-family: "Cafe24Ssukssuk";
+          src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Ssukssuk.woff")
+            format("woff");
+          font-weight: normal;
+          font-style: normal;
+        }
         body {
           margin: 0;
           padding: 0;
           color: ${theme.colors.gray12};
           background-color: ${theme.colors.gray2};
-         font-family: 'Cafe24Ssukssuk';
+          font-family: "Cafe24Ssukssuk";
         }
 
         * {

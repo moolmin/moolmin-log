@@ -35,7 +35,13 @@ const TagList: React.FC<Props> = () => {
   return (
     <StyledWrapper>
       <div className="top">
-        <Emoji>🏷️</Emoji> Tags
+        <img
+          width="20"
+          height="20"
+          src="https://img.icons8.com/stickers/100/tag.png"
+          alt="tags"
+        />{" "}
+        Tags
       </div>
       <div className="list">
         {Object.keys(data).map((key) => (
@@ -56,12 +62,19 @@ export default TagList
 
 const StyledWrapper = styled.div`
   .top {
-    display: none;
-    padding: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    padding-left: 0.25rem;
     margin-bottom: 0.75rem;
+    align-items: center;
+
+    img {
+      margin-right: 5px;
+    }
 
     @media (min-width: 1024px) {
-      display: block;
+      // display: block;
     }
   }
 

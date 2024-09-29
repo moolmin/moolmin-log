@@ -13,7 +13,13 @@ const ContactCard: React.FC = () => {
   return (
     <>
       <StyledTitle>
-        <Emoji>💬</Emoji> Contact
+        <img
+          width="20"
+          height="20"
+          src="https://img.icons8.com/stickers/100/paper-plane.png"
+          alt="paper-plane"
+        />
+        Contact
       </StyledTitle>
       <StyledWrapper>
         {CONFIG.profile.github && (
@@ -67,6 +73,12 @@ export default ContactCard
 const StyledTitle = styled.div`
   padding: 0.25rem;
   margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  img {
+    margin-right: 5px;
+  }
 `
 const StyledWrapper = styled.div`
   display: flex;
