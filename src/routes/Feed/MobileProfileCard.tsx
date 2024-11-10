@@ -10,7 +10,15 @@ type Props = {
 const MobileProfileCard: React.FC<Props> = () => {
   return (
     <StyledWrapper>
-      <div className="top">💻 Profile</div>
+      <div className="top">
+        <img
+          width="20"
+          height="20"
+          src="https://img.icons8.com/stickers/100/person-female.png"
+          alt="person-female"
+        />{" "}
+        Profile
+      </div>
       <div className="mid">
         <div className="wrapper">
           <Image
@@ -41,8 +49,14 @@ const StyledWrapper = styled.div`
   }
 
   > .top {
+    display: flex;
+    flex-direction: row;
     padding: 0.25rem;
     margin-bottom: 0.75rem;
+    align-items: center;
+    img {
+      margin-right: 5px;
+    }
   }
   > .mid {
     padding: 0.5rem;
